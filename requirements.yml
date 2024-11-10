@@ -1,0 +1,4 @@
+- src: git+https://github.com/okonstantinova/Devops_Labs.git
+  version: Lab-2
+  name: docker
+  path: roles/docker
