@@ -23,8 +23,8 @@
 
 - name: Update apt and install Docker package
   apt:
-    name: "{{ docker_package }}"
-    state: latest
+    name: "{{ docker_package }}={{ docker_version }}"
+    state: present
     update_cache: true
 
 - name: Add current user to the docker group
