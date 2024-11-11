@@ -1,23 +1,12 @@
 ---
-
 - hosts: app
   become: yes
-
   roles:
     - docker
+    - django_app
 
-  tasks:
-    - name: Pull the Django Docker image
-      docker_image:
-        name: timurbabs/django
-        tag: latest
-        source: pull
-
-    - name: Run the Django container
-      docker_container:
-        name: django_app
-        image: timurbabs/django:latest
-        state: started
-        restart_policy: always
-        ports:
-          - "8000:8000"
+- hosts: web
+  become: yes
+  roles:
+    - nginx
+    - django_app

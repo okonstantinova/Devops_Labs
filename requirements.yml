@@ -1,4 +1,10 @@
+---
 - src: git+https://github.com/okonstantinova/Devops_Labs.git
   version: Lab-2
   name: docker
   path: roles/docker
+
+- src: git+https://github.com/okonstantinova/Devops_Labs.git
+  version: Lab-3
+  name: nginx
+  path: roles/nginx
