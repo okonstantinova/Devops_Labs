@@ -6,9 +6,15 @@
 
 - name: Copy nginx site configuration
   template:
-    src: nginx.conf.j2
-    dest: /etc/nginx/sites-available/default
+    src: "{{ nginx_site_template }}"
+    dest: "{{ nginx_site_available }}"
   notify: Restart nginx
+
+- name: Enable nginx site
+  file:
+    src: "{{ nginx_site_available }}"
+    dest: "{{ nginx_site_enabled }}"
+    state: link
 
 - name: Ensure nginx is running
   service:

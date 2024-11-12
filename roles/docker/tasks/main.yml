@@ -1,13 +1,7 @@
 ---
-
 - name: Install required system packages
   apt:
-    pkg:
-      - curl
-      - git
-      - lynx
-      - python3-pip
-      - apt-transport-https
+    pkg: "{{ docker_dependencies }}"
     state: latest
     update_cache: true
 
