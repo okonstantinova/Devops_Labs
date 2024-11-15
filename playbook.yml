@@ -4,9 +4,3 @@
   roles:
     - docker
     - django_app
-
-- hosts: web
-  become: yes
-  roles:
-    - nginx
-    - django_app

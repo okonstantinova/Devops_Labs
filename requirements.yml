@@ -1,10 +1,6 @@
 ---
-- src: git+https://github.com/okonstantinova/Devops_Labs.git
-  version: Lab-2
+- src: git+https://github.com/okonstantinova/ansible-role-docker.git
   name: docker
-  path: roles/docker
 
-- src: git+https://github.com/okonstantinova/Devops_Labs.git
-  version: Lab-3
-  name: nginx
-  path: roles/nginx
+- src: git+https://github.com/okonstantinova/ansible-role-django_app.git
+  name: django_app
