@@ -52,9 +52,9 @@ ansible-galaxy init Docker
 
 ![image](https://github.com/user-attachments/assets/2493bf81-db78-47e9-acb5-6838d02766a8)
 
-
 6. Запустить приложение на нодах группы [app] используя ansible-playbook с ролью “**Docker**”
 
+![image](https://github.com/user-attachments/assets/a0ecf8b6-6b65-48c8-93fd-0ecc816eaa99)
 
 
 
