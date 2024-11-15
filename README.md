@@ -54,6 +54,11 @@ ansible-galaxy init Docker
 
 6. Запустить приложение на нодах группы [app] используя ansible-playbook с ролью “**Docker**”
 
+При помощи команды:
+```
+ansible-playbook -i hosts -l app -u vagrant playbook.yml
+```
+
 ![image](https://github.com/user-attachments/assets/a0ecf8b6-6b65-48c8-93fd-0ecc816eaa99)
 
 
