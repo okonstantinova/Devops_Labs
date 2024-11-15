@@ -9,4 +9,3 @@
   become: yes
   roles:
     - nginx
-    - django_app
