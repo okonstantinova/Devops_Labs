@@ -1,9 +1,16 @@
 ---
 - src: git+https://github.com/okonstantinova/ansible-role-docker.git
+  scm: git
   name: docker
 
 - src: git+https://github.com/okonstantinova/ansible-role-nginx.git
+  scm: git
   name: nginx
 
 - src: git+https://github.com/okonstantinova/ansible-role-django_app.git
+  scm: git
   name: django_app
+
+- src: git+https://github.com/okonstantinova/ansible-role-openvpn.git
+  scm: git
+  name: openvpn

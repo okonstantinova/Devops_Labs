@@ -1,3 +1,6 @@
+[vpn]
+openvpn-server ansible_host=192.168.56.201
+
 [master]
 srv1 ansible_host=192.168.56.201
 

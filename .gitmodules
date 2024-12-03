@@ -1,0 +1,3 @@
+[submodule "roles/openvpn"]
+	path = roles/openvpn
+	url = git@github.com:okonstantinova/ansible-role-openvpn.git

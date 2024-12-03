@@ -1,0 +1,8 @@
+---
+openvpn_packages:
+  - openvpn
+  - easy-rsa
+
+openvpn_config_path: /etc/openvpn/
+easy_rsa_path: /etc/openvpn/easy-rsa
+easy_rsa_pki_path: /etc/openvpn/easy-rsa/pki

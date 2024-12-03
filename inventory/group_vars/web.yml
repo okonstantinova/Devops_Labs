@@ -1,9 +1,4 @@
 ---
-# Путь к шаблону конфигурации Nginx
 nginx_site_template: "~/inventory/templates/nginx.conf.j2"
-
-# Путь назначения для основного конфигурационного файла Nginx
 nginx_site_available: "/etc/nginx/sites-available/default"
-
-# Путь назначения для символической ссылки
 nginx_site_enabled: "/etc/nginx/sites-enabled/default"
