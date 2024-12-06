@@ -1,13 +1,11 @@
 [vpn]
-openvpn-server ansible_host=192.168.56.201
-
-[master]
-srv1 ansible_host=192.168.56.201
+worker1 ansible_host=192.168.0.101 ansible_python_interpreter=/usr/bin/python3.8
 
 [app]
-srv2 ansible_host=192.168.56.202
-srv3 ansible_host=192.168.56.203
+worker2 ansible_host=192.168.0.102
 
 [web]
-srv4 ansible_host=192.168.56.204
-srv5 ansible_host=192.168.56.205
+worker3 ansible_host=192.168.0.103
+
+[lab5]
+worker4 ansible_host=192.168.0.104

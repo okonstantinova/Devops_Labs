@@ -1,0 +1,21 @@
+port {{ openvpn_port }}
+proto {{ openvpn_proto }}
+dev {{ openvpn_dev }}
+server {{ openvpn_server_subnet }}
+ifconfig-pool-persist ipp.txt
+push "route {{ openvpn_server_subnet }}"
+user {{ openvpn_user }}
+group {{ openvpn_group }}
+{% if openvpn_persist_key %}
+ca {{ openvpn_ca }}
+cert {{ openvpn_cert }}
+key {{ openvpn_key }}
+dh {{ openvpn_dh }}
+log-append {{ openvpn_log }}
+persist-key
+{% endif %}
+{% if openvpn_persist_tun %}
+persist-tun
+{% endif %}
+keepalive {{ openvpn_keepalive }}
+status {{ openvpn_status_log }} 1
