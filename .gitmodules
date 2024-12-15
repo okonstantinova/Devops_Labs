@@ -1,3 +1,7 @@
 [submodule "roles/openvpn"]
 	path = roles/openvpn
 	url = git@github.com:okonstantinova/ansible-role-openvpn.git
+
+[submodule "roles/postgresql"]
+        path = roles/postgresql
+        url = git@github.com:okonstantinova/ansible-role-postgresql.git
