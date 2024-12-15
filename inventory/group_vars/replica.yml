@@ -1,0 +1,10 @@
+---
+postgresql_replica_listen_addresses: '*'
+postgresql_replica_wal_level: replica
+postgresql_replica_archive_mode: on
+postgresql_replica_archive_command: '/bin/true'
+postgresql_replica_max_wal_senders: 5
+postgresql_replica_hot_standby: on
+# master_host: 192.168.0.103
+master_host: master-node
+replication_user: postgres

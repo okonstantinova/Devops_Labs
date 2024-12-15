@@ -7,5 +7,11 @@ worker2 ansible_host=192.168.0.102
 [web]
 worker3 ansible_host=192.168.0.103
 
-[lab5]
+[db]
 worker4 ansible_host=192.168.0.104
+
+[master]
+master-node ansible_host=192.168.0.103
+
+[replica]
+replica-node ansible_host=192.168.0.104

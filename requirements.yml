@@ -14,3 +14,7 @@
 - src: git+https://github.com/okonstantinova/ansible-role-openvpn.git
   scm: git
   name: openvpn
+
+- src: git+https://github.com/okonstantinova/ansible-role-postgresql.git
+  scm: git
+  name: postgresql
