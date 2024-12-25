@@ -1,6 +1,6 @@
 ---
-postgresql_user_name: olya
-postgresql_db_name: olya_db
+postgresql_user_name: default_user
+postgresql_db_name: default_db
 
 postgresql_version: "17"
 postgresql_package: postgresql
