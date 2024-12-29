@@ -15,3 +15,6 @@ master-node ansible_host=192.168.0.103
 
 [replica]
 replica-node ansible_host=192.168.0.104
+
+[monitoring]
+monitoring-node ansible_host=192.168.0.101

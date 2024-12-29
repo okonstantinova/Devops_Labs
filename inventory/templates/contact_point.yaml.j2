@@ -1,0 +1,12 @@
+apiVersion: 1
+contactPoints:
+  - orgId: 1
+    name: custom_alert
+    receivers:
+      - uid: email_alert_uid
+        type: email
+        disableResolveMessage: false
+        settings:
+          addresses: 
+            - {{ grafana_smtp_mail }}
+          singleEmail: true

@@ -5,3 +5,23 @@
 [submodule "roles/postgresql"]
         path = roles/postgresql
         url = git@github.com:okonstantinova/ansible-role-postgresql.git
+
+[submodule "roles/prometheus"]
+        path = roles/prometheus
+        url = git@github.com:okonstantinova/ansible-role-prometheus.git
+
+[submodule "roles/node_exporter"]
+        path = roles/node_exporter
+        url = git@github.com:okonstantinova/ansible-role-node_exporter.git
+
+[submodule "roles/grafana"]
+        path = roles/grafana
+        url = git@github.com:okonstantinova/ansible-role-grafana.git
+
+[submodule "roles/promtail_loki"]
+        path = roles/promtail_loki
+        url = git@github.com:okonstantinova/ansible-role-promtail_loki.git
+
+[submodule "roles/spring_boot"]
+        path = roles/spring_boot
+        url = git@github.com:okonstantinova/ansible-role-spring_boot.git

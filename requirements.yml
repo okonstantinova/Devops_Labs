@@ -18,3 +18,23 @@
 - src: git+https://github.com/okonstantinova/ansible-role-postgresql.git
   scm: git
   name: postgresql
+
+- src: git+https://github.com/okonstantinova/ansible-role-prometheus.git
+  scm: git
+  name: prometheus
+
+- src: git+https://github.com/okonstantinova/ansible-role-node_exporter.git
+  scm: git
+  name: node_exporter
+
+- src: git+https://github.com/okonstantinova/ansible-role-grafana.git
+  scm: git
+  name: grafana
+
+- src: git+https://github.com/okonstantinova/ansible-role-promtail_loki.git
+  scm: git
+  name: promtail_loki
+
+- src: git+https://github.com/okonstantinova/ansible-role-spring_boot.git
+  scm: git
+  name: spring_boot

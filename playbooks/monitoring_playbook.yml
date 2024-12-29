@@ -1,0 +1,13 @@
+---
+- hosts: app
+  become: yes
+  roles:
+    - role: spring_boot
+
+- hosts: monitoring
+  become: yes
+  roles:
+    - role: prometheus
+    - role: node_exporter
+    - role: grafana
+    - role: promtail_loki

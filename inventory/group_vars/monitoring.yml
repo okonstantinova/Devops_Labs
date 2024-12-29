@@ -1,0 +1,54 @@
+---
+# Prometheus
+prometheus_version: "2.47.0"
+prometheus_url: "https://github.com/prometheus/prometheus/releases/download/v{{ prometheus_version }}/prometheus-{{ prometheus_version }}.linux-amd64.tar.gz"
+prometheus_install_path: "/usr/local/bin"
+prometheus_config_path: "/etc/prometheus/prometheus.yml"
+prometheus_data_dir: "/var/lib/prometheus"
+
+spring_boot_app_target: "192.168.0.102:1235"
+
+# Node_exporter
+node_exporter_version: "1.8.1"
+node_exporter_url: "https://github.com/prometheus/node_exporter/releases/download/v{{ node_exporter_version }}/node_exporter-{{ node_exporter_version }}.linux-amd64.tar.gz"
+node_exporter_install_path: "/usr/local/bin"
+
+# Grafana
+grafana_version: "11.3.0"
+grafana_url: "https://dl.grafana.com/enterprise/release/grafana-enterprise_{{ grafana_version }}_amd64.deb"
+grafana_install_path: "/usr/share/grafana"
+grafana_config_path: "/etc/grafana/grafana.ini"
+grafana_data_dir: "/var/lib/grafana"
+grafana_dashboard_dir: "/var/lib/grafana/dashboards"
+grafana_user: "grafana"
+grafana_group: "grafana"
+
+grafana_smtp_mail: 'kola43843@gmail.com'
+grafana_smtp_password: 'grafana'
+
+# Promtail_Loki
+loki_version: "v3.2.1"
+promtail_version: "v3.2.1"
+
+loki_install_dir: /usr/local/bin
+promtail_install_dir: /usr/local/bin
+
+loki_config_dir: /etc/loki
+promtail_config_dir: /etc/promtail
+
+loki_config_file: "loki-local-config.yaml"
+promtail_config_file: "promtail-local-config.yaml"
+
+loki_url: "https://github.com/grafana/loki/releases/download/{{ loki_version }}/loki-linux-amd64.zip"
+promtail_url: "https://github.com/grafana/loki/releases/download/{{ promtail_version }}/promtail-linux-amd64.zip"
+
+positions_file: "/tmp/positions.yaml"
+
+loki_ports:
+  http: 3100
+  grpc: 9096
+
+promtail_ports:
+  http: 9080
+
+common_instance_addr: 192.168.0.101
